@@ -1,9 +1,15 @@
+To remove the redirect to `https://games.haxorai.com/` from the provided HTML code, you need to ensure that there are no scripts or meta tags that perform the redirection. The code you provided does not explicitly show a redirect, but it may be happening in one of the included JavaScript files (`loading.js`, `boot.js`, or `script.js`).
+
+Here’s a cleaned-up version of your HTML code without any explicit redirection. However, please note that if the redirection is happening in the external JavaScript files, you will need to modify those files directly to prevent the redirect.
+
+### Cleaned HTML Code
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <script src="patch/js/poki-sdk.js"></script>
-    <meta http-equiv="content-type" content="text/html; charset=UTF8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -59,7 +65,6 @@
             60% { opacity: 1; }
             100% { opacity: 0; }
         }
-
     </style>
 </head>
 <body>
@@ -77,8 +82,4 @@
         <h1>Loading</h1>
         <h1 class="dot one">.</h1><h1 class="dot two">.</h1><h1 class="dot three">.</h1>
     </div>
-    <script src="js/loading.js"></script>
-    <script src="js/boot.js"></script>
-    <script src ="https://gameshaxor.github.io/GSwitch/script.js"></script>
-</body>
-</html>
+    <script
